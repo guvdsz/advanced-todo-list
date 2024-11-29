@@ -174,16 +174,13 @@ selectInput.addEventListener("change", (e) => {
         cleanTaskContainer()
 		tasks.forEach((task) => {
 			if (task.completed === false) {
-				defaultMsg.classList.remove("hide");
+				defaultMsg.classList.add("hide");
 				createTask(task.title);
-			} else {
-				completed = true
+			} 
+			if (task.completed === true) {
+				defaultMsg.classList.remove("hide");
 			}
 		});
-		if (completed === true) {
-			cleanTaskContainer()
-			defaultMsg.classList.remove("hide");
-		}
 	}
 });
 
