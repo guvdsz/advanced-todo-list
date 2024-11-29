@@ -170,17 +170,18 @@ selectInput.addEventListener("change", (e) => {
 		});
 	}
 	if (valor === "pendentes") {
-		let completed = false;
-        cleanTaskContainer()
+		cleanTaskContainer()
+		let hasPendingTasks = false;
 		tasks.forEach((task) => {
 			if (task.completed === false) {
 				defaultMsg.classList.add("hide");
 				createTask(task.title);
-			} 
-			if (task.completed === true) {
-				defaultMsg.classList.remove("hide");
+				hasPendingTasks = true;
 			}
 		});
+		if (!hasPendingTasks) {
+			defaultMsg.classList.remove("hide");
+		}
 	}
 });
 
