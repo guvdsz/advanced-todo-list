@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(45deg, #2C3E50, #34495E, #4A69BD);
+    padding: 5rem;
+}
+.principal-container {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    background-color: #FDFDFD;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+h1 {
+    text-align: center;
+    font-size: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #dbdada;
+}
+.create-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    padding: 1rem 0rem;
+    border-bottom: 1px solid #dbdada;
+}
+.filter-form {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem 0rem;
+}
+.category-filter, .search-filter {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+label {
+    font-size: 1.25rem;
+}
+input, select {
+    width: 200px;
+    border: 1px solid #b9b8b8;
+    padding: 0.75rem;
+    &:focus {
+        outline: none;
+    }
+}
+.input-control {
+    display: flex;
+    gap: 0.5rem;
+}
+.btn {
+    padding: 0.75rem 1rem;
+    width: fit-content;
+    background-color: #FBFDFD;
+    border: 1px solid #b9b8b8;
+    cursor: pointer;
+    transition: all 0.15s ease-in-out;
+    &:hover {
+        background-color: #143665;
+        color: white;
+    }
+}
+.tasks-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem 0rem 2rem 0rem;
+    border-bottom: 1px solid #b9b8b8;
+}
+.task-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #b9b8b8;
+    padding: 1rem;
+}
+.task-card p {
+    font-size: 1.25rem;
+}
+.btn-control {
+    display: flex;
+    gap: 0.5rem;
+}
+.secondary-container {
+    display: flex;
+    width: fit-content;
+    flex-direction: column;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    background-color: #FDFDFD;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+.edit-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    padding: 1rem 0rem;
+    border-bottom: 1px solid #dbdada;
+}
+.completed {
+    text-decoration: line-through;
+    color: #ffffff;
+    background-color: #86919b;
+    transition: all 0.15s ease-in-out;
+}
+.completed .btn { 
+    background-color: #86919b;
+    color: #ffffff;
+    &:hover {
+        color: black;
+        border:1px solid black;
+    }
+}
+.hide {
+    display: none;
+}
+.defaultMsg {
+    text-align: center;
+    color: #969696;
+}
+

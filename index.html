@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="Myscript.js" defer></script>
+    <title>Todo List Avançado</title>
+</head>
+<body>
+    <div class="principal-container">
+        <h1>Todo Avançado</h1>
+        <form class="create-form">
+            <label for="taskNameInput">Adicione sua tarefa</label>
+            <div class="input-control">
+                <input type="text" name="taskNameInput" id="taskNameInput">
+                <button class="btn" id="createFormBtn"><i class="fa-solid fa-plus"></i></button>
+            </div>
+        </form>
+        <form class="filter-form">
+            <div class="search-filter">
+                <label for="searchInput">Pesquisar</label>
+                <div class="input-control">
+                    <input type="text" name="searchInput" id="searchInput">
+                    <button class="btn" id="deleteSearch"><i class="fa-solid fa-delete-left"></i></button>
+                </div>
+            </div>
+            <div class="category-filter">
+                <label for="selectInput">Filtrar</label>
+                <select name="selectInput" id="selectInput">
+                    <option value="todas" selected>Todas</option>
+                    <option value="feitas">Feitas</option>
+                    <option value="pendentes">Pendentes</option>
+                </select>
+            </div>
+        </form>
+        <div class="tasks-container">
+            <span class="defaultMsg hide">Nenhuma tarefa encontrada.</span>
+        </div>
+    </div>
+    <div class="secondary-container hide">
+        <h1>Todo Avançado</h1>
+        <form class="edit-form">
+            <label for="newTaskNameInput">Edite sua tarefa</label>
+            <div class="input-control">
+                <input type="text" name="newTaskNameInput" id="newTaskNameInput">
+                <button class="btn changeTaskNameBtn" id="changeTaskNameBtn"><i class="fa-solid fa-pen-to-square"></i></button>
+            </div>
+            <button class="btn cancelBtn" id="cancelBtn">Cancelar</button>
+        </form>
+        <form class="filter-form">
+            <div class="search-filter">
+                <label for="searchInput">Pesquisar</label>
+                <div class="input-control">
+                    <input type="text" name="searchInput" id="searchInput">
+                    <button class="btn"><i class="fa-solid fa-delete-left"></i></button>
+                </div>
+            </div>
+            <div class="category-filter">
+                <label for="selectInput">Filtrar</label>
+                <select name="selectInput" id="selectInput">
+                    <option value="todos" selected>Todos</option>
+                    <option value="feitos">Feitos</option>
+                    <option value="pendentes">Pendentes</option>
+                </select>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
