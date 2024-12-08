@@ -71,6 +71,8 @@ function createTask(taskTitle) {
 		principalContainer.classList.toggle("hide");
 		secondaryContainer.classList.toggle("hide");
 		target = e.target.closest(".task-card")
+		const taskTitleSaved = target.querySelector("p").textContent
+		secondaryContainer.querySelector("#newTaskNameInput").value = taskTitleSaved
 	});
 	changeTaskNameBtn.addEventListener("click", (e) => {
 		const taskTitleSaved = target.querySelector("p").textContent
